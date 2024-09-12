@@ -1,2 +1,2 @@
 # Top Stolen Vehicles Based On Theft Trends
-This project analyzes vehicle theft data using SQL to uncover patterns.
+This project analyzes stolen vehicle data to identify theft trends by time, type, location
