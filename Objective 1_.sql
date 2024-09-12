@@ -36,15 +36,13 @@ ORDER BY dow;
 
 SELECT DAYOFWEEK(date_stolen) AS dow, 
 CASE WHEN DAYOFWEEK(date_stolen) = 1 THEN 'Sunday'
-	 WHEN DAYOFWEEK(date_stolen) = 2 THEN 'Monday'
-	 WHEN DAYOFWEEK(date_stolen) = 3 THEN 'Tuesday'
-	 WHEN DAYOFWEEK(date_stolen) = 4 THEN 'Wednesday'
-	 WHEN DAYOFWEEK(date_stolen) = 5 THEN 'Thursday'
-	 WHEN DAYOFWEEK(date_stolen) = 6 THEN 'Friday'
+     WHEN DAYOFWEEK(date_stolen) = 2 THEN 'Monday'
+     WHEN DAYOFWEEK(date_stolen) = 3 THEN 'Tuesday'
+     WHEN DAYOFWEEK(date_stolen) = 4 THEN 'Wednesday'
+     WHEN DAYOFWEEK(date_stolen) = 5 THEN 'Thursday'
+     WHEN DAYOFWEEK(date_stolen) = 6 THEN 'Friday'
 ELSE 'Saturday' END AS day_of_week,
 COUNT(vehicle_id) AS num_vehicles
 FROM stolen_vehicles
 GROUP BY DAYOFWEEK(date_stolen), day_of_week
 ORDER BY dow;
-
--- 5. Data Visualization: Create a bar chart.
