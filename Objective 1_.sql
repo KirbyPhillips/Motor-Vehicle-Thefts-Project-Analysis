@@ -32,7 +32,7 @@ FROM stolen_vehicles
 GROUP BY DAYOFWEEK(date_stolen)
 ORDER BY dow;
 
--- 4. Replace the numeric day of week values with the full name of each day.alter
+-- 4. Replace the numeric day of week values with the full name of each day.
 
 SELECT DAYOFWEEK(date_stolen) AS dow, 
 CASE WHEN DAYOFWEEK(date_stolen) = 1 THEN 'Sunday'
