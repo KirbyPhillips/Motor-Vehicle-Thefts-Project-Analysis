@@ -113,5 +113,3 @@ FROM stolen_vehicles
 GROUP BY vehicle_type
 ORDER BY num_vehicles DESC
 LIMIT 10;
-
--- 5. Data Visualization: Create a heat map.
